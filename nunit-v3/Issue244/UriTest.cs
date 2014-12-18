@@ -29,7 +29,7 @@ using NUnit.Framework;
 
 #endregion
 
-namespace nunit.v3
+namespace nunit.v3.Issue244
 {
     [TestFixture]
     public class UriTest

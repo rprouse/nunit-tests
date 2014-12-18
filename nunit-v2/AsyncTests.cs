@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace nunit_v2
+namespace nunit.v2
 {
     [TestFixture]
     public class AsyncTests
