@@ -55,7 +55,6 @@ namespace nunit.v3.Issue210
         }
 
         [Test]
-        [Ignore("This is failing until Issue 210 is fixed")]
         [Description( "Issue 210 - TestContext.WriteLine in an AppDomain causes an error" )]
         public void CanWriteToTestContextInAppDomain()
         {

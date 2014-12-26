@@ -12,7 +12,7 @@ namespace nunit.v3.Issue210
 
         public void WriteToTestContext()
         {
-            TestContext.WriteLine( "RunsInAppDomain.WriteToTestContext" );
+            TestContext.WriteLine("RunsInAppDomain.WriteToTestContext");
         }
     }
 }
