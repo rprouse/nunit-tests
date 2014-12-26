@@ -54,6 +54,8 @@
     <Compile Include="Issue210\RunsInAppDomain.cs" />
     <Compile Include="Issue210\TextContextInAppDomain.cs" />
     <Compile Include="Issue36\IgnoreInTestFixture.cs" />
+    <Compile Include="Issue428\ExpectedException.cs" />
+    <Compile Include="Issue428\ExpectedExceptionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Issue244\UriTest.cs" />
   </ItemGroup>
