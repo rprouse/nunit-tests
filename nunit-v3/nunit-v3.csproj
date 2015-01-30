@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExpectedExceptionTests.cs" />
     <Compile Include="Issue210\RunsInAppDomain.cs" />
     <Compile Include="Issue210\TextContextInAppDomain.cs" />
     <Compile Include="Issue36\IgnoreInTestFixture.cs" />

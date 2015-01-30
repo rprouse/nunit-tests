@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace nunit.v2
+namespace nunit.v3
 {
     [TestFixture]
     public class ExpectedExceptionTests
@@ -21,8 +22,7 @@ namespace nunit.v2
             throw new ArgumentException();
         }
 
-        [TestCase(1)]
-        [TestCase(-1, ExpectedException = typeof(ArgumentException))]
+        [TestCase( 1 )]
         public void TestThrows( int x )
         {
             MustBeGreaterThanZero( x );
@@ -30,7 +30,7 @@ namespace nunit.v2
 
         private void MustBeGreaterThanZero( int x )
         {
-            if(x <= 0) throw new ArgumentException("Must be greater than 0", "x");
+            if ( x <= 0 ) throw new ArgumentException( "Must be greater than 0", "x" );
         }
     }
 }
