@@ -9,7 +9,7 @@ namespace nunit.v3.Issue36
         [Test]
         public void PassingButIgnoredTest()
         {
-            Assert.Pass("This passes");            
+            Assert.Pass("This passes");
         }
     }
 }
