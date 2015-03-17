@@ -54,6 +54,7 @@
     <Compile Include="ExpectedExceptionTests.cs" />
     <Compile Include="Issue210\RunsInAppDomain.cs" />
     <Compile Include="Issue210\TextContextInAppDomain.cs" />
+    <Compile Include="Issue318\MyDbTest.cs" />
     <Compile Include="Issue36\IgnoreInTestFixture.cs" />
     <Compile Include="Issue428\ExpectedException.cs" />
     <Compile Include="Issue428\ExpectedExceptionTests.cs" />
