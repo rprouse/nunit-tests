@@ -38,10 +38,7 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\nunit\bin\$(Configuration)\net-4.5\nunit.framework.dll</HintPath>
-    </Reference>
+    <Reference Include="nunit.framework, Version=3.0.5560.36863, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
