@@ -1,0 +1,6 @@
+﻿<NUnitProject>
+  <Settings activeconfig="active"/>
+  <Config binpathtype="auto" name="active">
+    <assembly path="C:\src\github\nunit-tests\nunit-v3\bin\Debug\nunit-v3.dll"/>
+  </Config>
+</NUnitProject>
