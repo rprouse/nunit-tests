@@ -74,7 +74,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.3.0.0-beta-2\lib\net40\nunit.framework.dll</HintPath>
+      <HintPath>..\packages\NUnit.3.0.0-beta-3\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
