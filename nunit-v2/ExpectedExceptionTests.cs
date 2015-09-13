@@ -13,12 +13,12 @@ namespace nunit.v2
         public void ThrowsException()
         {
             Assert.Throws<ArgumentException>( MethodThatThrows );
-            Assert.That( MethodThatThrows, Throws.ArgumentException );
+            Assert.That( MethodThatThrows, Throws.ArgumentException.With.Message.EqualTo("Test") );
         }
 
         private void MethodThatThrows()
         {
-            throw new ArgumentException();
+            throw new ArgumentException("Test");
         }
 
         [TestCase(1)]
