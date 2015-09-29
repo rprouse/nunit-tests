@@ -58,6 +58,7 @@
     <Compile Include="Issue36\IgnoreInTestFixture.cs" />
     <Compile Include="Issue428\ExpectedException.cs" />
     <Compile Include="Issue428\ExpectedExceptionTests.cs" />
+    <Compile Include="Issue838\TestCustomPropertyAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Issue244\UriTest.cs" />
     <Compile Include="PropertyTests.cs" />
