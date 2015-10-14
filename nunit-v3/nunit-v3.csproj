@@ -60,6 +60,7 @@
     <Compile Include="Issue428\ExpectedExceptionTests.cs" />
     <Compile Include="Issue838\TestCustomPropertyAttribute.cs" />
     <Compile Include="Issue850\TestInvalidChars.cs" />
+    <Compile Include="Issue893\TestTuples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Issue244\UriTest.cs" />
     <Compile Include="PropertyTests.cs" />
