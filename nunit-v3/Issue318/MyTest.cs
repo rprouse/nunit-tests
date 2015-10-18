@@ -11,7 +11,6 @@ namespace nunit.v3.Issue318
         {
             Assert.That(test, Is.Not.Null);
             Assert.That(test.Fixture, Is.Not.Null);
-            Assert.That(test.Fixture.GetType(), Is.EqualTo(test.FixtureType));
         }
     }
 
@@ -21,7 +20,6 @@ namespace nunit.v3.Issue318
         {
             Assert.That(test, Is.Not.Null);
             Assert.That(test.Fixture, Is.Not.Null);
-            Assert.That(test.Fixture.GetType(), Is.EqualTo(test.FixtureType));
         }
     }
 
