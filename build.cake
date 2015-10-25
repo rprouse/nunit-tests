@@ -51,7 +51,39 @@ Task("Build")
     }
 });
 
+Task("Test-nunit-v2")
+    .IsDependentOn("Build")
+    .Does(() =>
+{
+    NUnit("./nunit-v2/bin/" + configuration + "/nunit-v2.dll");
+});
+
+Task("Test-nunit-v3")
+    .IsDependentOn("Build")
+    .Does(() =>
+{
+    StartProcess("C:/Program Files (x86)/NUnit.org/bin/nunit-console.exe", "./nunit-v3/bin/" + configuration + "/nunit-v3.dll");
+});
+
+Task("Test-nunitlite-v3")
+    .IsDependentOn("Build")
+    .Does(() =>
+{
+});
+
+Task("Test-nunit-v3-clr")
+    .IsDependentOn("Build")
+    .Does(() =>
+{
+});
+
+Task("Test")
+    .IsDependentOn("Test-nunit-v2")
+    .IsDependentOn("Test-nunit-v3")
+    .IsDependentOn("Test-nunitlite-v3")
+    .IsDependentOn("Test-nunit-v3-clr");
+
 Task("Default")
-  .IsDependentOn("Build");
+  .IsDependentOn("Test");
 
 RunTarget(target);
