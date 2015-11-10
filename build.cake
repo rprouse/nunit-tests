@@ -1,6 +1,7 @@
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
+#tool "NUnit.Runners"
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
@@ -62,7 +63,7 @@ Task("Test-nunit-v3")
     .IsDependentOn("Build")
     .Does(() =>
 {
-    StartProcess("C:/Program Files (x86)/NUnit.org/bin/nunit-console.exe", "./nunit-v3/bin/" + configuration + "/nunit-v3.dll");
+    StartProcess("C:/Program Files (x86)/NUnit.org/nunit-console/nunit3-console.exe", "./nunit-v3/bin/" + configuration + "/nunit-v3.dll");
 });
 
 Task("Test-nunitlite-v3")
