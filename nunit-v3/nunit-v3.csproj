@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="CodeLensTestWithTestCase.cs" />
     <Compile Include="ExpectedExceptionTests.cs" />
+    <Compile Include="Issue1062.cs" />
     <Compile Include="Issue210\RunsInAppDomain.cs" />
     <Compile Include="Issue210\TextContextInAppDomain.cs" />
     <Compile Include="Issue318\MyTest.cs" />
