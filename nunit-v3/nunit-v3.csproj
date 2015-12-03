@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseClassTests.cs" />
     <Compile Include="CodeLensTestWithTestCase.cs" />
     <Compile Include="ExpectedExceptionTests.cs" />
     <Compile Include="Issue1062.cs" />
