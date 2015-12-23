@@ -16,7 +16,7 @@ namespace nunit.v3.Issue893
         {
             Tuple<int, int> actual = Tuple.Create(1, 2);
             Tuple<double, double> expected = Tuple.Create(1.0, 2.0);
-            
+
             Assert.That(actual, Is.EqualTo(expected));
         }
     }

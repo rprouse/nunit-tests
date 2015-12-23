@@ -62,7 +62,7 @@ Task("Test-nunit-v3")
     .IsDependentOn("Build")
     .Does(() =>
 {
-    StartProcess("C:/Program Files (x86)/NUnit.org/bin/nunit-console.exe", "./nunit-v3/bin/" + configuration + "/nunit-v3.dll");
+    StartProcess("tools/NUnit.Console/tools/nunit3-console.exe", "./nunit-v3/bin/" + configuration + "/nunit-v3.dll");
 });
 
 Task("Test-nunitlite-v3")
