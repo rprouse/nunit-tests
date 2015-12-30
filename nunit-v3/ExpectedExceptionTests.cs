@@ -32,5 +32,17 @@ namespace nunit.v3
         {
             if ( x <= 0 ) throw new ArgumentException( "Must be greater than 0", "x" );
         }
+
+
+        [Test]
+        public void RunTest()
+        {
+            Assert.That(RetMethod, Throws.Exception);
+        }
+
+        private static sbyte RetMethod()
+        {
+            throw new Exception();
+        }
     }
 }
