@@ -23,6 +23,7 @@ namespace NUnitLite.Tests
         }
 
         [Test]
+        [Ignore("Just for testing")]
         [Category( "Failing" )]
         [Author( "Code Monkey" )]
         public void Fail()
@@ -44,6 +45,7 @@ namespace NUnitLite.Tests
         }
 
         [Test]
+        [Ignore("Just for testing")]
         public void Error()
         {
             TestContext.WriteLine( "I am about to throw!!!" );

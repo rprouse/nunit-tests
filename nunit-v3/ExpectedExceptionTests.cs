@@ -37,7 +37,7 @@ namespace nunit.v3
         [Test]
         public void RunTest()
         {
-            Assert.That(RetMethod, Throws.Exception);
+            Assert.That(() => RetMethod(), Throws.InstanceOf<Exception>());
         }
 
         private static sbyte RetMethod()

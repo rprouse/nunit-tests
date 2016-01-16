@@ -11,6 +11,7 @@ namespace nunit.v3
     public class AsyncTests
     {
         [Test]
+        [Ignore("Issue #1190")]
         public void ShouldCatchAsyncExceptions()
         {
             var ioe = Assert.Throws<InvalidOperationException>(async () => await DelayedFailureAsync());
