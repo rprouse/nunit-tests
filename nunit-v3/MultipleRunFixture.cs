@@ -15,7 +15,7 @@ namespace nunit.v3
         }
 
         public static IEnumerable<int> TestData =>
-            Enumerable.Range(0, 100);
+            Enumerable.Range(0, 1);
 
         [Test]
         public void TestMethod()
