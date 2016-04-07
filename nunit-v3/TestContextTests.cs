@@ -1,16 +1,19 @@
 ﻿using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace nunit.v3
 {
     [TestFixture]
+    [Category("Fixture")]
     public class TestContextTests
     {
+        [SetUp]
+        public void SetUp()
+        {
+            var properties = TestContext.CurrentContext.Test.Properties;
+        }
+
         [TearDown]
         public void TearDown()
         {
@@ -24,6 +27,7 @@ namespace nunit.v3
         }
 
         [Test]
+        [Category("Test")]
         public void PassingMethod()
         {
             Assert.Pass("Your first passing test");
