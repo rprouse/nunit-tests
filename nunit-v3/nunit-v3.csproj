@@ -57,6 +57,7 @@
     <Compile Include="ExpectedExceptionTests.cs" />
     <Compile Include="Issue1062.cs" />
     <Compile Include="Issue1103.cs" />
+    <Compile Include="Issue1372\AlphaOrderingTests.cs" />
     <Compile Include="Issue1394\HasPropertyTestCase.cs" />
     <Compile Include="Issue210\RunsInAppDomain.cs" />
     <Compile Include="Issue210\TextContextInAppDomain.cs" />
