@@ -23,6 +23,7 @@ namespace nunit.v3.Issue1372
         }
 
         [Test]
+        [Order(2)]
         public void E_Test()
         {
             TestContext.WriteLine("E");
@@ -41,6 +42,7 @@ namespace nunit.v3.Issue1372
         }
 
         [Test]
+        [Order(1)]
         public void F_Test()
         {
             TestContext.WriteLine("F");
