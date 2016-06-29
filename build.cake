@@ -5,6 +5,8 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
+#tool "nuget:?package=NUnit.ConsoleRunner"
+
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
 //////////////////////////////////////////////////////////////////////
@@ -55,14 +57,19 @@ Task("Test-nunit-v2")
     .IsDependentOn("Build")
     .Does(() =>
 {
-    NUnit("./nunit-v2/bin/" + configuration + "/nunit-v2.dll");
+    NUnit3("./nunit-v2/bin/" + configuration + "/nunit-v2.dll",
+        new NUnit3Settings {
+            Results = "TestResults-v2.xml",
+            ResultFormat = "nunit2"
+        });
 });
 
 Task("Test-nunit-v3")
     .IsDependentOn("Build")
     .Does(() =>
 {
-    StartProcess("tools/NUnit.Console/tools/nunit3-console.exe", "./nunit-v3/bin/" + configuration + "/nunit-v3.dll");
+    NUnit3("./nunit-v3/bin/" + configuration + "/nunit-v3.dll");
+    //StartProcess("tools/NUnit.Console/tools/nunit3-console.exe", "./nunit-v3/bin/" + configuration + "/nunit-v3.dll");
 });
 
 Task("Test-nunitlite-v3")
