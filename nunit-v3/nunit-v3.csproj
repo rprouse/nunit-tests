@@ -54,6 +54,7 @@
     <Compile Include="AsyncTests.cs" />
     <Compile Include="BaseClassTests.cs" />
     <Compile Include="CodeLensTestWithTestCase.cs" />
+    <Compile Include="CombinatorialTests.cs" />
     <Compile Include="ExpectedExceptionTests.cs" />
     <Compile Include="Issue1062.cs" />
     <Compile Include="Issue1103.cs" />
