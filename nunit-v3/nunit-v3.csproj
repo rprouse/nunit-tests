@@ -55,6 +55,7 @@
     <Compile Include="BaseClassTests.cs" />
     <Compile Include="CodeLensTestWithTestCase.cs" />
     <Compile Include="CombinatorialTests.cs" />
+    <Compile Include="DynamicTests.cs" />
     <Compile Include="ExpectedExceptionTests.cs" />
     <Compile Include="IgnoreTests.cs" />
     <Compile Include="Issue1062.cs" />
