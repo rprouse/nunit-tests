@@ -7,6 +7,44 @@ using System.Threading.Tasks;
 
 namespace nunit.v3
 {
+    [TestFixture]
+    public class DerivedGeneric : GenericBase<string>
+    {
+        [Test]
+        public void DerivedGenericTest()
+        {
+            Assert.Pass("DerivedGeneric");
+        }
+    }
+
+    [TestFixture]
+    public class DerivedAbstract : AbstractBase
+    {
+        [Test]
+        public void DerivedAbstractTest()
+        {
+            Assert.Pass("DerivedAbstractTest");
+        }
+
+        public override void MustImplement()
+        {
+        }
+    }
+
+    [TestFixture]
+    public class DerivedAbstractGeneric : AbstractGenericBase<string>
+    {
+        [Test]
+        public void DerivedAbstractGenericTest()
+        {
+            Assert.Pass("DerivedAbstractGeneric");
+        }
+
+        public override void MustImplement()
+        {
+        }
+    }
+
     public class LoggingBase
     {
         [TearDown]

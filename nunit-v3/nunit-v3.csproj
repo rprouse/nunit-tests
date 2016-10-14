@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncTests.cs" />
+    <Compile Include="BaseClasses.cs" />
     <Compile Include="BaseClassTests.cs" />
     <Compile Include="CodeLensTestWithTestCase.cs" />
     <Compile Include="CombinatorialTests.cs" />
