@@ -58,6 +58,7 @@
     <Compile Include="CombinatorialTests.cs" />
     <Compile Include="DynamicTests.cs" />
     <Compile Include="ExpectedExceptionTests.cs" />
+    <Compile Include="FailingTests.cs" />
     <Compile Include="IgnoreTests.cs" />
     <Compile Include="Issue1062.cs" />
     <Compile Include="Issue1103.cs" />
