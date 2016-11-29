@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\src\github\nunit-tests\nunit-v2\bin\Release\nunit-v2.dll" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-06-28" time="02:51:35">
-  <environment nunit-version="3.4.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14366.0" platform="Win32NT" cwd="C:\src\github\nunit-tests" machine-name="XPS" user="Rob" user-domain="XPS" />
-  <culture-info current-culture="en-CA" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\src\github\nunit-tests\nunit-v2\bin\Release\nunit-v2.dll" executed="True" result="Success" success="True" time="0.105" asserts="0">
+<test-results name="C:\src\nunit\nunit-tests\nunit-v2\bin\Debug\nunit-v2.dll" total="7" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-11-28" time="23:38:54">
+  <environment nunit-version="3.5.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="C:\src\nunit\nunit-tests" machine-name="XPS-15" user="rob" user-domain="XPS-15" />
+  <culture-info current-culture="en-CA" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="C:\src\nunit\nunit-tests\nunit-v2\bin\Debug\nunit-v2.dll" executed="True" result="Success" success="True" time="0.098" asserts="0">
     <properties>
-      <property name="_PID" value="7476" />
+      <property name="_PID" value="28172" />
       <property name="_APPDOMAIN" value="test-domain-" />
     </properties>
     <results>
-      <test-suite type="Namespace" name="nunit" executed="True" result="Success" success="True" time="0.095" asserts="0">
+      <test-suite type="Namespace" name="nunit" executed="True" result="Success" success="True" time="0.090" asserts="0">
         <results>
-          <test-suite type="Namespace" name="v2" executed="True" result="Success" success="True" time="0.094" asserts="0">
+          <test-suite type="Namespace" name="v2" executed="True" result="Success" success="True" time="0.090" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="AsyncTests" executed="True" result="Success" success="True" time="0.058" asserts="0">
+              <test-suite type="TestFixture" name="AsyncTests" executed="True" result="Success" success="True" time="0.037" asserts="0">
                 <results>
-                  <test-case name="nunit.v2.AsyncTests.AsyncTest" executed="True" result="Success" success="True" time="0.052" asserts="1">
+                  <test-case name="nunit.v2.AsyncTests.AsyncTest" executed="True" result="Success" success="True" time="0.031" asserts="1">
                     <properties>
                       <property name="_DESCRIPTION" value="Testing nunit/nunitv2#15 async support in .NET 4.0 using the async support pack" />
                     </properties>
@@ -24,21 +24,31 @@
               </test-suite>
               <test-suite type="TestFixture" name="ExpectedExceptionTests" executed="True" result="Success" success="True" time="0.021" asserts="0">
                 <results>
-                  <test-suite type="ParameterizedTest" name="TestThrows" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                  <test-suite type="ParameterizedTest" name="TestThrows" executed="True" result="Success" success="True" time="0.008" asserts="0">
                     <results>
                       <test-case name="nunit.v2.ExpectedExceptionTests.TestThrows(1)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                      <test-case name="nunit.v2.ExpectedExceptionTests.TestThrows(-1)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                      <test-case name="nunit.v2.ExpectedExceptionTests.TestThrows(-1)" executed="True" result="Success" success="True" time="0.006" asserts="0" />
                     </results>
                   </test-suite>
-                  <test-case name="nunit.v2.ExpectedExceptionTests.ThrowsException" executed="True" result="Success" success="True" time="0.013" asserts="2" />
+                  <test-case name="nunit.v2.ExpectedExceptionTests.ThrowsException" executed="True" result="Success" success="True" time="0.011" asserts="2" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="TestContextTests" executed="True" result="Success" success="True" time="0.006" asserts="0">
+              <test-suite type="TestFixture" name="TestCaseDataTests" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="TestStringArrayArguments" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                    <results>
+                      <test-case name="nunit.v2.TestCaseDataTests.TestStringArrayArguments(System.String[])" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="nunit.v2.TestCaseDataTests.TestStringArrayArguments(System.String[])" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TestContextTests" executed="True" result="Success" success="True" time="0.017" asserts="0">
                 <properties>
                   <property name="_CATEGORIES" value="Fixture" />
                 </properties>
                 <results>
-                  <test-case name="nunit.v2.TestContextTests.PassingMethod" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                  <test-case name="nunit.v2.TestContextTests.PassingMethod" executed="True" result="Success" success="True" time="0.017" asserts="0">
                     <properties>
                       <property name="_CATEGORIES" value="Test" />
                     </properties>
