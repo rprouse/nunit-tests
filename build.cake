@@ -76,6 +76,7 @@ Task("Test-nunitlite-v3")
     .IsDependentOn("Build")
     .Does(() =>
 {
+    StartProcess("./nunitlite-v3/bin/" + configuration + "/nunitlite-v3.exe" );
 });
 
 Task("Test-nunit-v3-clr")
