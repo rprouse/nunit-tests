@@ -10,6 +10,20 @@ namespace nunit.v3
     [TestFixture]
     public class AsyncTests
     {
+    [TearDown]
+    public void TearDown()
+    {
+        TestContext.Progress.WriteLine("Async Teardown");
+    }
+
+    [Test]
+    public async Task AnAsyncTest()
+    {
+        TestContext.Progress.WriteLine("Before async call");
+        await Task.Delay(100);
+        TestContext.Progress.WriteLine("After async call");
+    }
+
         [Test]
         [Ignore("Issue #1190")]
         public void ShouldCatchAsyncExceptions()
