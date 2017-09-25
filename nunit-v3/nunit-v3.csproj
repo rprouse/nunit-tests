@@ -83,6 +83,7 @@
     <Compile Include="TestCaseDataTests.cs" />
     <Compile Include="TestContextTests.cs" />
     <Compile Include="MultipleRunFixture.cs" />
+    <Compile Include="TestNameInSetup.cs" />
     <Compile Include="TestParamsTest.cs" />
   </ItemGroup>
   <ItemGroup>
