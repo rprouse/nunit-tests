@@ -18,18 +18,18 @@ namespace nunit.v3
             Assert.That(MethodThatThrows, Throws.ArgumentException);
         }
 
-    [Test]
-    public void DoesNotThrowSpecificException()
-    {
-        try
+        [Test]
+        public void DoesNotThrowSpecificException()
         {
-            MethodThatThrows();
+            try
+            {
+                MethodThatThrows();
+            }
+            catch (Exception ex)
+            {
+                Assert.That(ex, Is.Not.TypeOf(typeof(Exception)));
+            }
         }
-        catch (Exception ex)
-        {
-            Assert.That(ex, Is.Not.TypeOf(typeof(Exception)));
-        }
-    }
 
         private void MethodThatThrows()
         {
