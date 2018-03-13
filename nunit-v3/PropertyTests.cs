@@ -12,7 +12,7 @@ namespace nunit.v3
         [Category("DOC")]
         public void CanGetCategory()
         {
-            IPropertyBag properties = TestContext.CurrentContext.Test.Properties;
+            var properties = TestContext.CurrentContext.Test.Properties;
             var cat = properties["Category"];
             Assert.That(cat, Contains.Item("PDF"));
             Assert.That(cat, Contains.Item("DOC"));
