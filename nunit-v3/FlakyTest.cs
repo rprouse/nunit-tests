@@ -22,10 +22,11 @@ namespace nunit.v3
             Assert.That(result, Is.EqualTo(4));
         }
 
+        int count2 = 0;
+
         int FlakyAdd(int x, int y)
         {
-            var rand = new Random();
-            if (rand.NextDouble() > 0.5)
+            if(count2++ == 2)
                 throw new ArgumentOutOfRangeException();
 
             return x + y;
