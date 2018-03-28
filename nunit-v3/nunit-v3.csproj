@@ -62,6 +62,7 @@
     <Compile Include="DynamicTests.cs" />
     <Compile Include="ExpectedExceptionTests.cs" />
     <Compile Include="FailingTests.cs" />
+    <Compile Include="FlakyTest.cs" />
     <Compile Include="GenericTests.cs" />
     <Compile Include="IgnoreTests.cs" />
     <Compile Include="Issue1062.cs" />
