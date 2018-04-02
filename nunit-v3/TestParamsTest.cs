@@ -19,4 +19,27 @@ namespace nunit.v3
             TestContext.WriteLine($"Fetched test parameters {code} and {date}");
         }
     }
+
+    [TestFixtureSource(nameof(TestData))]
+    public class TestParamsInSource
+    {
+        private readonly string _param;
+
+        public TestParamsInSource(string param)
+        {
+            _param = param;
+        }
+
+        [Test]
+        public void TestParameter()
+        {
+            TestContext.WriteLine($"Parameter: {_param}");
+            Assert.That(_param, Is.Not.EqualTo("<unknown>"));
+        }
+
+        public static IEnumerable<string> TestData()
+        {
+            yield return TestContext.Parameters.Get("Param", "<unknown>");
+        }
+    }
 }
