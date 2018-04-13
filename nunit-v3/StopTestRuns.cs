@@ -5,8 +5,7 @@ namespace nunit.v3
     [TestFixture]
     public class StopTestRuns
     {
-        // Switch back to false to test this behaviour
-        bool _stopTests = true;
+        bool _stopTests; // = true;
 
         [SetUp]
         public void SetUp()
