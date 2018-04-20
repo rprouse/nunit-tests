@@ -15,7 +15,7 @@ namespace nunit.v2
 
         private static Task<int> AsyncReturnOne()
         {
-            return TaskEx.Run(() => 1);
+            return Task.Run(() => 1);
         }
     }
 }
