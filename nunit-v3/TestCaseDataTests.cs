@@ -36,5 +36,29 @@ namespace nunit.v3
         {
             Assert.IsFalse(false);
         }
+
+        //public static TestCaseData[] testDataMultiDimensionalByteArray = new TestCaseData[]
+        //{
+        //    new TestCaseData(
+        //        "test",
+        //        "another deal",
+        //        new byte[,] { { 1, 2 }, { 2, 3 } }
+        //    )
+        //};
+
+        //// this test passes only on 3.8.1, it fails (to even set up the fixture) with the stacktrace above of 3.10.1
+        //[TestCaseSource(nameof(testDataMultiDimensionalByteArray))]
+        //public void TestThingMultiDimension(string thing, string anotherString, byte[,] multiByte)
+        //{
+        //    Assert.Pass();
+        //}
+
+    [TestCaseSource(nameof(TheData))]
+    public void TestData(object i)
+    {
+        Assert.That(i is int);
+    }
+
+    public static IEnumerable TheData => new object[] { 1, 2, 3, 4, 5, 'a', 6, 7, 8 };
     }
 }
