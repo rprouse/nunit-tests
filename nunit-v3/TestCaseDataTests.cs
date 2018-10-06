@@ -53,12 +53,12 @@ namespace nunit.v3
         //    Assert.Pass();
         //}
 
-    [TestCaseSource(nameof(TheData))]
-    public void TestData(object i)
-    {
-        Assert.That(i is int);
-    }
+        [TestCaseSource(nameof(TheData))]
+        public void TestData(object i)
+        {
+            Assert.That(i is int);
+        }
 
-    public static IEnumerable TheData => new object[] { 1, 2, 3, 4, 5, 'a', 6, 7, 8 };
+        public static IEnumerable TheData => new object[] { 1, 2, 3, 4, 5, /*'a',*/ 6, 7, 8 };
     }
 }

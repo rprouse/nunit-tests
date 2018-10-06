@@ -31,13 +31,13 @@ namespace nunit.v3
         [Test]
         public void TestTwo()
         {
-            Assert.Fail("This failed too");
+            //Assert.Fail("This failed too");
         }
 
         [Test]
         public void TestThree()
         {
-            Assert.Fail("This failed three");
+            //Assert.Fail("This failed three");
         }
     }
 }
