@@ -31,6 +31,7 @@ namespace nunit.v3
         }
 
         [Test]
+        [Explicit("Only run with parameters")]
         public void TestParameter()
         {
             TestContext.WriteLine($"Parameter: {_param}");
