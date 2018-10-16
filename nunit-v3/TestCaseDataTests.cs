@@ -60,5 +60,36 @@ namespace nunit.v3
         }
 
         public static IEnumerable TheData => new object[] { 1, 2, 3, 4, 5, /*'a',*/ 6, 7, 8 };
+
+
+        public const string PropertyA = "PropA";
+
+        [Test]
+        [Property(PropertyA, "ValueA")]
+        [Property(PropertyA, "ValueB")]
+        public void Test1()
+        {
+            var propertyList = TestContext.CurrentContext.Test.Properties[PropertyA];
+            Assert.AreEqual(2, propertyList.Count());
+            Assert.AreEqual("ValueA", TestContext.CurrentContext.Test.Properties[PropertyA].ToList()[0] as string);
+            Assert.AreEqual("ValueB", TestContext.CurrentContext.Test.Properties[PropertyA].ToList()[1] as string);
+        }
+
+        [Test]
+        [TestCaseSource(nameof(MyData))]
+        public void Test2(string parm1)
+        {
+            var propertyList = TestContext.CurrentContext.Test.Properties[PropertyA];
+            Assert.AreEqual(2, propertyList.Count());
+            Assert.AreEqual("ValueA", TestContext.CurrentContext.Test.Properties[PropertyA].ToList()[0] as string);
+            Assert.AreEqual("ValueB", TestContext.CurrentContext.Test.Properties[PropertyA].ToList()[1] as string);
+        }
+
+        public static IEnumerable<TestCaseData> MyData()
+        {
+            yield return new TestCaseData("Fox").SetProperty(PropertyA, "ValueA").SetProperty(PropertyA, "ValueB");
+            yield return new TestCaseData("Rabbit").SetProperty(PropertyA, "ValueA").SetProperty(PropertyA, "ValueB");
+            yield return new TestCaseData("Hound").SetProperty(PropertyA, "ValueA").SetProperty(PropertyA, "ValueB");
+        }
     }
 }
