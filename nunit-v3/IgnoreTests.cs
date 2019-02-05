@@ -26,12 +26,14 @@ namespace nunit.v3
 
         [Ignore("NUnit Issue #1762")]
         [TestCase(1)]
+        [TestCase(2)]
         public void IgnoreBeforeTestCase(int i)
         {
             Assert.Fail("This test should be ignored");
         }
 
         [TestCase(1)]
+        [TestCase(2)]
         [Ignore("NUnit Issue #1762")]
         public void IgnoreAfterTestCase(int i)
         {
