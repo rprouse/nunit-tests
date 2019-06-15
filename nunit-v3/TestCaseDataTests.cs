@@ -11,6 +11,17 @@ namespace nunit.v3
     [TestFixture]
     public class TestCaseDataTests
     {
+        static IEnumerable<int[,]> TestMatrixs()
+        {
+            yield return new int[4, 2] { { 1, 2 }, { 3, 4 }, { 5, 3 }, { 7, 9 } };
+        }
+
+        [TestCaseSource(nameof(TestMatrixs))]
+        public void TestCreateSquareMatrixPower2(int[,] matrixSource)
+        {
+            Assert.NotNull(matrixSource);
+        }
+
         public static IEnumerable<TestCaseData> Data()
         {
             yield return new TestCaseData(new[] { new string[] { "XS", "XL", "M" } });
