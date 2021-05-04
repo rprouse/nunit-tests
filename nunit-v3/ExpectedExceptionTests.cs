@@ -1,16 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System;
+using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using System.Threading;
 
 namespace nunit.v3
 {
     [TestFixture]
     public class ExpectedExceptionTests
     {
+        public static void FaultyMethod() =>
+            throw new Exception("Error Message!");
+
+        [Test]
+        public void TestThrowsWithMessage()
+        {
+            Assert.That(FaultyMethod, Throws.Exception.With.Message.EqualTo("Error Message!"));
+        }
+
         [Test]
         public void ThrowsException()
         {

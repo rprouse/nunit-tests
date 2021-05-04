@@ -83,6 +83,7 @@
     <Compile Include="Issue3285.cs" />
     <Compile Include="Issue3472.cs" />
     <Compile Include="Issue36\IgnoreInTestFixture.cs" />
+    <Compile Include="Issue3848.cs" />
     <Compile Include="Issue428\ExpectedException.cs" />
     <Compile Include="Issue428\ExpectedExceptionTests.cs" />
     <Compile Include="Issue838\TestCustomPropertyAttribute.cs" />
