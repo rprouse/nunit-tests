@@ -13,13 +13,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>nunit.v3</RootNamespace>
     <AssemblyName>nunit-v3</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartAction>Program</StartAction>
     <StartProgram>D:\src\nunit\nunit\bin\Debug\nunit-console.exe</StartProgram>
     <StartArguments>-v --labels=All --wait nunit-v3.dll</StartArguments>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -84,6 +85,7 @@
     <Compile Include="Issue3472.cs" />
     <Compile Include="Issue36\IgnoreInTestFixture.cs" />
     <Compile Include="Issue3848.cs" />
+    <Compile Include="Issue3851.cs" />
     <Compile Include="Issue428\ExpectedException.cs" />
     <Compile Include="Issue428\ExpectedExceptionTests.cs" />
     <Compile Include="Issue838\TestCustomPropertyAttribute.cs" />
